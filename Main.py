@@ -1,5 +1,5 @@
 #coding=utf-8
-#Baike_spider Version 1.0.0 By Effortjohn
+#Baike_spider Version 1.0.1 By Effortjohn
 #https://github.com/effortjohn/baike_spider
 
 
@@ -86,12 +86,12 @@ class Outputer(object):
     def output_html(self):
         fout=open('result.htm','w')
         fout.write("<html>")
-        fout.write("<body>")
         fout.write("<head>")
-        fout.write('<meta charset="utf-8">')
+        fout.write('<meta charset="utf-8"></meta>')
         fout.write("<title>Crawl Result</title>")
         fout.write("</head>")
-        fout.write('<h1><p align="center">Crawl Result</p></h1>')
+        fout.write("<body>")
+        fout.write('<h1 style="text-align:center">Crawl Result</h1>')
         fout.write('<table style="border-collapse:collapse;"  border="1">')
         for data in self.datas:
             fout.write("<tr>")
@@ -100,7 +100,7 @@ class Outputer(object):
             fout.write("<td>%s</td>" % data["summary"].encode("utf-8"))
             fout.write("</tr>")
         fout.write("</table>")
-        fout.write('<br><br><p align="center">Power By Effortjohn</p>')
+        fout.write('<br /><br /><p style="text-align:center">Power By Effortjohn</p>')
         fout.write("</body>")
         fout.write("</html>")
 
