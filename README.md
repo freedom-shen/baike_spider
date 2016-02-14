@@ -1,9 +1,9 @@
 #版本更新#
 
-Baike_spider Version 1.0.0 By Effortjohn
+Baike_spider Version 1.0.1 By Effortjohn
     
     更新内容：
-    1.初始版本
+    1.修改了输出时错误的HTML代码
 
 #程序简介#
 
